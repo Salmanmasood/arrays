@@ -1,0 +1,26 @@
+public static int[] insertion(int[] x,int sizeofarray)
+        {
+            for (int i = 1; i <= sizeofarray; i++)
+            {
+                int j = i;
+                while (j > 1)
+                {
+                    if (x[j - 1] > x[j])
+                    {
+
+
+                        int temp = x[j - 1];
+                        x[j - 1] = x[j];
+                        x[j] = temp;
+                        j--;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+            }
+            return x;
+
+        } //end of method
